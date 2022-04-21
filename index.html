@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Application</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header>
+      <a href="#" class="logo"><img src="img/logo.png" alt="" / width=70" height="40"> Eat2Day Resto</a>
+
+      <nav class="navbar">
+        <a class="active" href="#home">home</a>
+        <a href="#dishes">masakan</a>
+        <a href="#about">tentang kami</a>
+        <a href="#menu">menu</a>
+        <a href="#review">ulasan</a>
+        <a href="#order">order</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+      </div>
+    </header>
+
+    <!-- akhir header -->
+
+    <!-- search form  -->
+
+    <form action="" id="search-form">
+      <input type="search" placeholder="cari disini..." name="" id="search-box" />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- home -->
+
+    <section class="home" id="home">
+      <div class="swiper-container home-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>makanan spesial kami</span>
+              <h3>beef ribeye steak</h3>
+              <p>Potongan daging sapi premium yang disajikan dengan nasi hangat dan sayuran yang dipanggang serta dilengkapi dengan saos black pepper</p>
+              <a href="#" class="btn">Pesan sekarang</a>
+            </div>
+            <div class="image">
+              <img src="img/beef ribeye steak.png" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>makanan spesial kami</span>
+              <h3>fried ramen noodle</h3>
+              <p>Mie ramen goreng yang dilengkapi dengan potongan daging premium dan sayuran</p>
+              <a href="#" class="btn">Pesan sekarang</a>
+            </div>
+            <div class="image">
+              <img src="img/ramen noodle.png" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>makanan spesial kami</span>
+              <h3>chicken teriyaki</h3>
+              <p>Potongan daging ayam premium yang disajikan dengan nasi hangat</p>
+              <a href="#" class="btn">Pesan sekarang</a>
+            </div>
+            <div class="image">
+              <img src="img/chicken teriyaki.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- akhir home  -->
+
+    <!-- dishes -->
+
+    <section class="dishes" id="dishes">
+      <h3 class="sub-heading">Masakan kami</h3>
+      <h1 class="heading">Makanan populer</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/beef teriyaki.png" alt="" />
+          <h3>beef teriyaki</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 40.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/chicken teriyaki.png" alt="" />
+          <h3>chicken teriyaki</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 35.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/prawn teriyaki.png" alt="" />
+          <h3>prawn teriyaki</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 45.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/salmon teriyaki.png" alt="" />
+          <h3>salmon teriyaki</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 55.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/beef ribeye steak.png" alt="" />
+          <h3>beef ribeye steak</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 75.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/salmon steak.png" alt="" />
+          <h3>salmon steak</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 95.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/ramen noodle.png" alt="" />
+          <h3>ramen noodle</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 40.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/rice with beef.png" alt="" />
+          <h3>rice with beef</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 45.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/rice with chicken.png" alt="" />
+          <h3>rice with chicken</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 40.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/madras curry.png" alt="" />
+          <h3>madras curry</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 30.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/risotto with vegetables.png" alt="" />
+          <h3>risotto</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 60.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/cheese ball.png" alt="" />
+          <h3>cheese ball</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 25.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/french fries.png" alt="" />
+          <h3>french fries</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 20.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/onion ring.png" alt="" />
+          <h3>onion ring</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 25.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/green grape ad.png" alt="" />
+          <h3>green grape</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 20.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/peach.png" alt="" />
+          <h3>peach</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 20.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/pink lemonade.png" alt="" />
+          <h3>pink lemonade</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 20.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/plum ade.png" alt="" />
+          <h3>plum ade</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 20.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/passion fruit lemonade.png" alt="" />
+          <h3>passion fruit</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 20.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/peach & berry lemonade.png" alt="" />
+          <h3>peach & berry</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 20.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/unicorn magic.png" alt="" />
+          <h3>unicorn magic</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 20.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/es teler.png" alt="" />
+          <h3>es teler</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 15.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/chocolate coffee.png" alt="" />
+          <h3>chocolate coffee</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 25.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="img/strawberry smothiees.png" alt="" />
+          <h3>strawberry smothies</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>Rp 25.000</span>
+          <a href="#" class="btn">tambahkan ke keranjang</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- akhir dishes  -->
+
+    <!-- tentang kami -->
+
+    <section class="about" id="about">
+      <h3 class="sub-heading">tentang kami</h3>
+      <h1 class="heading">kenapa memilih kami?</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="img/stock-photography-freezing-vegetable-motion-cooking-c4c8453022a52663226dce7842b5b807.png" alt="" />
+        </div>
+
+        <div class="content">
+          <h3>simpel, enak dan terjangkau</h3>
+          <p>
+            Seperti yang kita ketahui, gaya hidup masyarakat sekarang sudah bergeser ke arah yang serba praktis dan hemat, sehingga rice box menjadi salah satu solusinya. Rice box merupakan alternatif yang sangat praktis, tidak hanya untuk
+            orang sibuk seperti pekerja kantoran tetapi juga bisa menjadi alternatif sektor konsumsi untuk acara" besar .
+          </p>
+          <p>
+            Oleh karena itu , Eat2Day hadir sebagai solusi masyarakat yang ingin menikmati makanan mewah yang praktis dengan harga sangat terjangkau serta sehat dan higenis pastinya karena kami selalu menggunakan bahan" yang fresh dan bebas
+            dari bahan pengawet sehingga aman untuk dikonsumsi setiap hari .
+          </p>
+          <div class="icons-container">
+            <div class="icons">
+              <i class="fas fa-shipping-fast"></i>
+              <span>free ongkir</span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-dollar-sign"></i>
+              <span>pembayaran mudah</span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-headset"></i>
+              <span>servis 24/7 </span>
+            </div>
+          </div>
+          <a href="#" class="btn">Pelajari lebih lanjut</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- akhir tentang kami -->
+
+    <!-- menu -->
+
+    <section class="menu" id="menu">
+      <h3 class="sub-heading">Menu</h3>
+      <h1 class="heading">Masakan special dari kami untuk anda</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="img/fried rice.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>fried rice</h3>
+            <p>Nasi goreng lengkap dengan seafood pilihan</p>
+            <a href="#" class="btn">tambahkan ke keranjang</a>
+            <span class="price">Rp 35.000</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="img/chicken black pepper.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>chicken black pepper</h3>
+            <p>Potongan daging ayam disajikan dengan saos black pepper</p>
+            <a href="#" class="btn">tambahkan ke keranjang</a>
+            <span class="price">Rp 50.000</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="img/burger.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>burger</h3>
+            <p>Burger dengan roti empuk dan daging premium</p>
+            <a href="#" class="btn">tambahkan ke keranjang</a>
+            <span class="price">Rp 35.000</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="img/fried noodle.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>fried noodle</h3>
+            <p>Mie goreng lengkap dengan seafood pilihan</p>
+            <a href="#" class="btn">tambahkan ke keranjang</a>
+            <span class="price">Rp 35.000</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="img/chicken strip.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>chicken strip</h3>
+            <p>Potongan daging ayam olahan premium yang digoreng dan dilengkapi saos mayo</p>
+            <a href="#" class="btn">tambahkan ke keranjang</a>
+            <span class="price">Rp 30.000</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="img/beef buffet.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>beef buffet</h3>
+            <p>Daging sapi premium yang dipanggang dan dilengkapi dengan telur</p>
+            <a href="#" class="btn">tambahkan ke keranjang</a>
+            <span class="price">Rp 85.000</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="img/grilled salmon.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>grilled salmon</h3>
+            <p>Daging salmon pilihan yang dipanggang dan dilengkapi dengan saos keju</p>
+            <a href="#" class="btn">tambahkan ke keranjang</a>
+            <span class="price">Rp 70.000</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="img/lemontea.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>lemon tea</h3>
+            <p>Teh dengan buah lemon premium serta dilengkapi dengan ekstrak buah jeruk yang menyegarkan</p>
+            <a href="#" class="btn">tambahkan ke keranjang</a>
+            <span class="price">Rp 15.000</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="img/juice.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>juice</h3>
+            <p>Aneka jus buah premium yang sehat dan menyegarkan</p>
+            <a href="#" class="btn">tambahkan ke keranjang</a>
+            <span class="price">Rp 20.000</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="img/mineral water.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>mineral water</h3>
+            <p>Air mineral yang sehat dan menyegarkan</p>
+            <a href="#" class="btn">tambahkan ke keranjang</a>
+            <span class="price">Rp 5.000</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="img/soda.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>soda</h3>
+            <p>Aneka minuman bersoda yang menyegarkan</p>
+            <a href="#" class="btn">tambahkan ke keranjang</a>
+            <span class="price">Rp 10.000</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="img/coffee latte.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>coffee latte</h3>
+            <p>Kopi latte yang diolah dari biji kopi premium</p>
+            <a href="#" class="btn">tambahkan ke keranjang</a>
+            <span class="price">Rp 25.000</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- akhir menu -->
+
+    <!-- ulasan  -->
+
+    <section class="review" id="review">
+      <h3 class="sub-heading">Testimoni pelanggan</h3>
+      <h1 class="heading">Apa kata mereka</h1>
+
+      <div class="swiper-container review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="img/testi1.jpg" alt="" />
+              <div class="user-info">
+                <h3>Mindy</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>Emang the best makanannya, tiap minggu pasti harus singgah makan lagi dan lagi , enak bingitzzz intinya titik</p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="img/testi2.jpg" alt="" />
+              <div class="user-info">
+                <h3>Ameck</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>Cita rasa masakannya sangat cocok di aku dan lidah banyak orang tentunya , rasanya enak poel dah , gak coba nyesel pasti</p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="img/testi3.jpg" alt="" />
+              <div class="user-info">
+                <h3>Along</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>Kemaren saya direkomendasiin oleh teman-teman , karena penasaran saya coba dong , dan emang betul enaknya kayak mo meninggoy</p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="img/testi4.jpg" alt="" />
+              <div class="user-info">
+                <h3>Ahui</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>Saya sangat happy dengan pelayanan yang diberikan , walaupun lumayan jauh, makanan sampai tempat tujuan dengan cepat dan aman</p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="img/testi5.jpg" alt="" />
+              <div class="user-info">
+                <h3>Smith</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>It was so good , I loved the foods so much , the taste was incredible delicious , you have to try it immediately</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- akhir ulasan -->
+
+    <!-- order  -->
+
+    <section class="order" id="order">
+      <h3 class="sub-heading">Order sekarang</h3>
+      <h1 class="heading">Gratis dan cepat</h1>
+
+      <form action="">
+        <div class="inputBox">
+          <div class="input">
+            <span>nama anda</span>
+            <input type="text" placeholder="masukkan nama anda" />
+          </div>
+          <div class="input">
+            <span>No Telp anda</span>
+            <input type="number" placeholder="masukkan no telp anda" />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>orderan anda</span>
+            <input type="text" placeholder="masukkan nama makanan yang dipesan" />
+          </div>
+          <div class="input">
+            <span>tambahan makanan</span>
+            <input type="test" placeholder="tambahan makanan" />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>jumlah orderan</span>
+            <input type="number" placeholder="jumlah orderan" />
+          </div>
+          <div class="input">
+            <span>tanggal dan waktu</span>
+            <input type="datetime-local" />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>alamat anda</span>
+            <textarea name="" placeholder="masukkan alamat anda" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="input">
+            <span>pesan anda</span>
+            <textarea name="" placeholder="masukkan pesan anda" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+
+        <input type="submit" value="order sekarang" class="btn" />
+      </form>
+    </section>
+
+    <!-- akhir order -->
+
+    <!-- footer -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>lokasi</h3>
+          <a href="#">medan</a>
+          <a href="#">jakarta</a>
+          <a href="#">palembang</a>
+          <a href="#">manado</a>
+          <a href="#">batam</a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#home">home</a>
+          <a href="#dishes">masakan</a>
+          <a href="#about">tentang kami</a>
+          <a href="#menu">menu</a>
+          <a href="#review">ulasan</a>
+          <a href="#order">order</a>
+        </div>
+
+        <div class="box">
+          <h3>Info kontak</h3>
+          <a href="#">+62 87849919889</a>
+          <a href="#">filbertleo88@gmail.com</a>
+          <a href="#">Jalan Selamat No 2 </a>
+          <a href="#">medan, indonesia - 20212</a>
+        </div>
+
+        <div class="box">
+          <h3>Sosial media</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
+
+      <div class="credit">copyright @ 2022 oleh <span>mr. filbert leonardo</span></div>
+    </section>
+
+    <!-- akhir footer -->
+
+    <!-- loader part  -->
+    <div class="loader-container">
+      <img src="img/loader.gif" alt="" />
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
